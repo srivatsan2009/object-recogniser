@@ -1,7 +1,7 @@
- 
+
 <html>
   <head>
-    <title>Emotion To Emoji</title>
+    <title>MobileNet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,60 +12,41 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
   <body>
-  <div class="container">
-  
     <center>
-     <h3 class="btn btn-warning text-capitalize heading">emotion to emoji app
-       <br>
-       <span>&#128522;</span>
-      <span>&#128512;</span>
-      <span>&#128532;</span>
-      <span>&#128546;</span>
-      <span>&#128545;</span>
-      <span>&#128548;</span>
-     </h3>
-      <br><br>
+   <div class="col-xs-12 headerdiv"><h2 class="text-capitalize">image identification app
+    <img src="logo.gif">
+   </h2></div>
+   <div class="main_div col-sm-6 col-xs-12"><label>webcam view</label>
+    <div id="camera"></div>
+    <button onclick="takesnap()" class="btn btn-info">take picture</button>
+   </div>
+  
+   <div class="main_div col-sm-6 col-xs-12"><label>snapshot</label>
+    <div id="result"></div>
+    <button onclick="check()" class="btn btn-success">identify image</button>
+   </div>
 
-      <p style="font-size: 22px;">Take your selfie to generate emoji
-      	<br>
-        <b style="color: yellow">Are you Happy?</b>
-        <br>
-        <b style="color: black">Are you Sad?</b>
-        <br>
-        <b style="color: red">Are you Angry?</b>
-        <br>
-      </p>
-
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label>webcam view- </label>
-         <div id="camera"></div>
-        <br><br>
-        <button onclick="takepic()" class="btn btn-warning">capture</button>
-      </div>
-    <div class="text-capitalize col-md-4 col-sm-12 col-xs-12">
-    <label>prediction 1</label>
-  <p class="emotion_name" id="result_emotion_name"></p>
-  <p class="emoji" id="update_emoji"></p>
-
-  <label>prediction 2</label>
-  <p class="emotion_name" id="result_emotion_name2"></p>
-  <p class="emoji" id="update_emoji2"></p>
-</div>
-<div class="col-md-4 col-sm-12 col-xs-12">
-<label>snapshot-</label>
-<div id="result"></div>
-<br><br>
-<button onclick="check()" class="btn btn-success">predict the emoji</button>
-</div>
+   <div class="col-xs-12 footer_div"><h4 class="col-sm-6 col-xs-12">
+     <img src="blub.gif">
+     <span id="object_name"></span>
+   </h4></div>
+   <div class="copy_right_footer">developed by srivatsan</div>
     </center>
-   
 
 
+    
 <script src="main.js"></script>
-
-  </body>al
+  </body>
 </html>
 
+
+
+
+
+
+
+
  
+
